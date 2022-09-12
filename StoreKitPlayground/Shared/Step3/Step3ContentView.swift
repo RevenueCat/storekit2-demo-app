@@ -9,7 +9,6 @@ import SwiftUI
 import StoreKit
 
 struct Step3ContentView: View {
-    
     @StateObject var purchaseManager = Step3PurchaseManager()
 
     var body: some View {
