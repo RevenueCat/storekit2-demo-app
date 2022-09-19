@@ -9,7 +9,7 @@ import Foundation
 import StoreKit
 
 @MainActor
-final class Step3PurchaseManager: ObservableObject {
+class Step3PurchaseManager: ObservableObject {
 
     let productIds = ["pro_monthly", "pro_yearly", "pro_lifetime"]
 

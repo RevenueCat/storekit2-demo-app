@@ -1,26 +1,25 @@
 //
-//  Step4PurchaseManager.swift
+//  Step7PurchaseManager.swift
 //  StoreKitPlayground (iOS)
 //
-//  Created by Josh Holtz on 9/11/22.
+//  Created by Josh Holtz on 9/17/22.
 //
 
 import Foundation
 import StoreKit
 
 @MainActor
-class Step4PurchaseManager: ObservableObject {
+class Step7PurchaseManager: ObservableObject {
 
     let productIds = ["pro_monthly", "pro_yearly", "pro_lifetime"]
 
     @Published var products: [Product] = []
     @Published var purchasedProductIDs = Set<String>()
 
-    var hasUnlockedPro: Bool {
-        return self.purchasedProductIDs.count > 0
-    }
+    let entitlementManager: Step7EntitlementManager
 
-    init() {
+    init(entitlementManager: Step7EntitlementManager) {
+        self.entitlementManager = entitlementManager
         Task {
             try await loadProducts()
             await updatePurchasedProducts()
@@ -73,5 +72,7 @@ class Step4PurchaseManager: ObservableObject {
                 self.purchasedProductIDs.remove(transaction.productID)
             }
         }
+
+        self.entitlementManager.hasPro = self.purchasedProductIDs.count > 0
     }
 }

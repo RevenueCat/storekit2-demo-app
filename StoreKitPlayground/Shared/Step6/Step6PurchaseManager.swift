@@ -1,15 +1,15 @@
 //
-//  Step4PurchaseManager.swift
+//  Step6PurchaseManager.swift
 //  StoreKitPlayground (iOS)
 //
-//  Created by Josh Holtz on 9/11/22.
+//  Created by Josh Holtz on 9/17/22.
 //
 
 import Foundation
 import StoreKit
 
 @MainActor
-class Step4PurchaseManager: ObservableObject {
+class Step6PurchaseManager: ObservableObject {
 
     let productIds = ["pro_monthly", "pro_yearly", "pro_lifetime"]
 

@@ -30,6 +30,8 @@ struct ContentView: View {
 //        Step1ContentView()
 //        Step2ContentView()
 //        Step3ContentView()
-        Step4ContentView()
+//        Step4ContentView()
+//        Step7ContentView()
+        Step10ContentView()
     }
 }

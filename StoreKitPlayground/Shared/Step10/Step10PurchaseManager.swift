@@ -1,26 +1,27 @@
 //
-//  Step4PurchaseManager.swift
+//  Step10PurchaseManager.swift
 //  StoreKitPlayground (iOS)
 //
-//  Created by Josh Holtz on 9/11/22.
+//  Created by Josh Holtz on 9/18/22.
 //
 
 import Foundation
 import StoreKit
 
 @MainActor
-class Step4PurchaseManager: ObservableObject {
+class Step10PurchaseManager: NSObject, ObservableObject {
 
     let productIds = ["pro_monthly", "pro_yearly", "pro_lifetime"]
 
     @Published var products: [Product] = []
     @Published var purchasedProductIDs = Set<String>()
 
-    var hasUnlockedPro: Bool {
-        return self.purchasedProductIDs.count > 0
-    }
+    let entitlementManager: Step10EntitlementManager
 
-    init() {
+    init(entitlementManager: Step10EntitlementManager) {
+        self.entitlementManager = entitlementManager
+        super.init()
+        SKPaymentQueue.default().add(self)
         Task {
             try await loadProducts()
             await updatePurchasedProducts()
@@ -73,5 +74,17 @@ class Step4PurchaseManager: ObservableObject {
                 self.purchasedProductIDs.remove(transaction.productID)
             }
         }
+
+        self.entitlementManager.hasPro = self.purchasedProductIDs.count > 0
+    }
+}
+
+extension Step10PurchaseManager: SKPaymentTransactionObserver {
+    func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
+
+    }
+
+    func paymentQueue(_ queue: SKPaymentQueue, shouldAddStorePayment payment: SKPayment, for product: SKProduct) -> Bool {
+        return true
     }
 }

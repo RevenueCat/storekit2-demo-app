@@ -15,7 +15,7 @@ import StoreKit
 // 3. Found a note in the docs saying `For more information about finishing transactions, see finish().`
 //   - Not really sure what it wants me to do with `finish()` yet
 
-final class TransactionObserver {
+class TransactionObserver {
 
     var updates: Task<Void, Never>? = nil
 
