@@ -9,15 +9,11 @@ import SwiftUI
 import StoreKit
 
 struct ContentView: View {
-    @StateObject var entitlementManager: EntitlementManager
-    @StateObject var purchaseManager: PurchaseManager
+    @EnvironmentObject
+    private var entitlementManager: EntitlementManager
 
-    init() {
-        let entitlementManager = EntitlementManager()
-        let purchaseManager = PurchaseManager(entitlementManager: entitlementManager)
-        self._entitlementManager = StateObject(wrappedValue: entitlementManager)
-        self._purchaseManager = StateObject(wrappedValue: purchaseManager)
-    }
+    @EnvironmentObject
+    private var purchaseManager: PurchaseManager
 
     var body: some View {
         VStack(spacing: 20) {
@@ -25,9 +21,9 @@ struct ContentView: View {
                 Text("Thank you for purchasing pro!")
             } else {
                 Text("Products")
-                ForEach(purchaseManager.products) { (product) in
+                ForEach(purchaseManager.products) { product in
                     Button {
-                        Task {
+                        _ = Task<Void, Never> {
                             do {
                                 try await purchaseManager.purchase(product: product)
                             } catch {
@@ -44,7 +40,7 @@ struct ContentView: View {
                 }
 
                 Button {
-                    Task {
+                    _ = Task<Void, Never> {
                         do {
                             try await AppStore.sync()
                         } catch {
@@ -53,6 +49,14 @@ struct ContentView: View {
                     }
                 } label: {
                     Text("Restore Purchases")
+                }
+            }
+        }.task {
+            _ = Task<Void, Never> {
+                do {
+                    try await purchaseManager.loadProducts()
+                } catch {
+                    print(error)
                 }
             }
         }
