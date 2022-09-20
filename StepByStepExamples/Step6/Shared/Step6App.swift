@@ -9,9 +9,16 @@ import SwiftUI
 
 @main
 struct Step6App: App {
+    @StateObject
+    private var purchaseManager = PurchaseManager()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(purchaseManager)
+                .task {
+                    await purchaseManager.updatePurchasedProducts()
+                }
         }
     }
 }

@@ -11,49 +11,45 @@ import StoreKit
 @MainActor
 class PurchaseManager: ObservableObject {
 
-    let productIds = ["pro_monthly", "pro_yearly", "pro_lifetime"]
+    private let productIds = ["pro_monthly", "pro_yearly", "pro_lifetime"]
 
-    @Published var products: [Product] = []
-    @Published var purchasedProductIDs = Set<String>()
+    @Published
+    private(set) var products: [Product] = []
 
-    let entitlementManager: EntitlementManager
+    @Published
+    private(set) var purchasedProductIDs = Set<String>()
+
+    private var productsLoaded = false
+    private let entitlementManager: EntitlementManager
 
     init(entitlementManager: EntitlementManager) {
         self.entitlementManager = entitlementManager
-        Task {
-            try await loadProducts()
-            await updatePurchasedProducts()
-        }
     }
 
     func loadProducts() async throws {
-        let products = try await Product.products(for: productIds)
-
-        // Products are not returned in the order the ids are requested
-        // Sorting the products based on productIds index
-        self.products = products.sorted { (a, b) in
-            guard let indexA = self.productIds.firstIndex(of: a.id), let indexB = self.productIds.firstIndex(of: b.id) else {
-                return false
-            }
-            return indexA < indexB
-        }
+        guard !self.productsLoaded else { return }
+        self.products = try await Product.products(for: productIds)
+        self.productsLoaded = true
     }
 
     func purchase(product: Product) async throws {
         let result = try await product.purchase()
 
         switch result {
-        case .success(let verificationResult):
-            switch verificationResult {
-            case .verified(let transaction):
-                await transaction.finish()
-                await self.updatePurchasedProducts()
-            case .unverified:
-                break
-            }
+        case let .success(.verified(transaction)):
+            // Successful purchase
+            await transaction.finish()
+            await self.updatePurchasedProducts()
+        case let .success(.unverified(_, error)):
+            // Successful purchase but transaction/receipt can't be verified
+            // Could be a jailbroken phone
+            break
         case .pending:
+            // Transaction waiting on SCA (Strong Customer Authentication) or
+            // approval from Ask to Buy
             break
         case .userCancelled:
+            // ^^^
             break
         @unknown default:
             break
@@ -73,6 +69,6 @@ class PurchaseManager: ObservableObject {
             }
         }
 
-        self.entitlementManager.hasPro = self.purchasedProductIDs.count > 0
+        self.entitlementManager.hasPro = !self.purchasedProductIDs.isEmpty
     }
 }
