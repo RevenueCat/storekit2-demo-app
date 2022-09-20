@@ -3,28 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C8355B828D89A0800D7C083 /* Step10App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8355B728D89A0800D7C083 /* Step10App.swift */; };
-		2C8355BA28D89A0800D7C083 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8355B928D89A0800D7C083 /* ContentView.swift */; };
-		2C8355BC28D89A0900D7C083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8355BB28D89A0900D7C083 /* Assets.xcassets */; };
-		2C8355C028D89A0900D7C083 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8355BF28D89A0900D7C083 /* Preview Assets.xcassets */; };
+		2C13365428D8BC5B00D2D1D6 /* Step10App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13364428D8BC5A00D2D1D6 /* Step10App.swift */; };
+		2C13365528D8BC5B00D2D1D6 /* Step10App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13364428D8BC5A00D2D1D6 /* Step10App.swift */; };
+		2C13365628D8BC5B00D2D1D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13364528D8BC5A00D2D1D6 /* ContentView.swift */; };
+		2C13365728D8BC5B00D2D1D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13364528D8BC5A00D2D1D6 /* ContentView.swift */; };
+		2C13365828D8BC5B00D2D1D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C13364628D8BC5B00D2D1D6 /* Assets.xcassets */; };
+		2C13365928D8BC5B00D2D1D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C13364628D8BC5B00D2D1D6 /* Assets.xcassets */; };
+		2C13366428D8BD0D00D2D1D6 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13366328D8BD0D00D2D1D6 /* PurchaseManager.swift */; };
+		2C13366528D8BD0D00D2D1D6 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13366328D8BD0D00D2D1D6 /* PurchaseManager.swift */; };
+		2C13366728D8BD1600D2D1D6 /* EntitlementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13366628D8BD1600D2D1D6 /* EntitlementManager.swift */; };
+		2C13366828D8BD1600D2D1D6 /* EntitlementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13366628D8BD1600D2D1D6 /* EntitlementManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C8355B428D89A0800D7C083 /* Step10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Step10.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C8355B728D89A0800D7C083 /* Step10App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step10App.swift; sourceTree = "<group>"; };
-		2C8355B928D89A0800D7C083 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2C8355BB28D89A0900D7C083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2C8355BD28D89A0900D7C083 /* Step10.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Step10.entitlements; sourceTree = "<group>"; };
-		2C8355BF28D89A0900D7C083 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2C8355F028D89C9800D7C083 /* Step10Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Step10Configuration.storekit; sourceTree = "<group>"; };
+		2C13364428D8BC5A00D2D1D6 /* Step10App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step10App.swift; sourceTree = "<group>"; };
+		2C13364528D8BC5A00D2D1D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2C13364628D8BC5B00D2D1D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C13364B28D8BC5B00D2D1D6 /* Step10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Step10.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C13365128D8BC5B00D2D1D6 /* Step10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Step10.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C13365328D8BC5B00D2D1D6 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		2C13366228D8BCF700D2D1D6 /* Step10Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Step10Configuration.storekit; sourceTree = "<group>"; };
+		2C13366328D8BD0D00D2D1D6 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		2C13366628D8BD1600D2D1D6 /* EntitlementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitlementManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2C8355B128D89A0800D7C083 /* Frameworks */ = {
+		2C13364828D8BC5B00D2D1D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C13364E28D8BC5B00D2D1D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,128 +49,171 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C8355AB28D89A0800D7C083 = {
+		2C13363E28D8BC5A00D2D1D6 = {
 			isa = PBXGroup;
 			children = (
-				2C8355F028D89C9800D7C083 /* Step10Configuration.storekit */,
-				2C8355B628D89A0800D7C083 /* Step10 */,
-				2C8355B528D89A0800D7C083 /* Products */,
+				2C13366228D8BCF700D2D1D6 /* Step10Configuration.storekit */,
+				2C13364328D8BC5A00D2D1D6 /* Shared */,
+				2C13365228D8BC5B00D2D1D6 /* macOS */,
+				2C13364C28D8BC5B00D2D1D6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		2C8355B528D89A0800D7C083 /* Products */ = {
+		2C13364328D8BC5A00D2D1D6 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				2C8355B428D89A0800D7C083 /* Step10.app */,
+				2C13364428D8BC5A00D2D1D6 /* Step10App.swift */,
+				2C13364528D8BC5A00D2D1D6 /* ContentView.swift */,
+				2C13366328D8BD0D00D2D1D6 /* PurchaseManager.swift */,
+				2C13366628D8BD1600D2D1D6 /* EntitlementManager.swift */,
+				2C13364628D8BC5B00D2D1D6 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		2C13364C28D8BC5B00D2D1D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C13364B28D8BC5B00D2D1D6 /* Step10.app */,
+				2C13365128D8BC5B00D2D1D6 /* Step10.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2C8355B628D89A0800D7C083 /* Step10 */ = {
+		2C13365228D8BC5B00D2D1D6 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				2C8355B728D89A0800D7C083 /* Step10App.swift */,
-				2C8355B928D89A0800D7C083 /* ContentView.swift */,
-				2C8355BB28D89A0900D7C083 /* Assets.xcassets */,
-				2C8355BD28D89A0900D7C083 /* Step10.entitlements */,
-				2C8355BE28D89A0900D7C083 /* Preview Content */,
+				2C13365328D8BC5B00D2D1D6 /* macOS.entitlements */,
 			);
-			path = Step10;
-			sourceTree = "<group>";
-		};
-		2C8355BE28D89A0900D7C083 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				2C8355BF28D89A0900D7C083 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
+			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2C8355B328D89A0800D7C083 /* Step10 */ = {
+		2C13364A28D8BC5B00D2D1D6 /* Step10 (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2C8355C328D89A0900D7C083 /* Build configuration list for PBXNativeTarget "Step10" */;
+			buildConfigurationList = 2C13365C28D8BC5B00D2D1D6 /* Build configuration list for PBXNativeTarget "Step10 (iOS)" */;
 			buildPhases = (
-				2C8355B028D89A0800D7C083 /* Sources */,
-				2C8355B128D89A0800D7C083 /* Frameworks */,
-				2C8355B228D89A0800D7C083 /* Resources */,
+				2C13364728D8BC5B00D2D1D6 /* Sources */,
+				2C13364828D8BC5B00D2D1D6 /* Frameworks */,
+				2C13364928D8BC5B00D2D1D6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Step10;
-			productName = Step10;
-			productReference = 2C8355B428D89A0800D7C083 /* Step10.app */;
+			name = "Step10 (iOS)";
+			productName = "Step10 (iOS)";
+			productReference = 2C13364B28D8BC5B00D2D1D6 /* Step10.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C13365028D8BC5B00D2D1D6 /* Step10 (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C13365F28D8BC5B00D2D1D6 /* Build configuration list for PBXNativeTarget "Step10 (macOS)" */;
+			buildPhases = (
+				2C13364D28D8BC5B00D2D1D6 /* Sources */,
+				2C13364E28D8BC5B00D2D1D6 /* Frameworks */,
+				2C13364F28D8BC5B00D2D1D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Step10 (macOS)";
+			productName = "Step10 (macOS)";
+			productReference = 2C13365128D8BC5B00D2D1D6 /* Step10.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2C8355AC28D89A0800D7C083 /* Project object */ = {
+		2C13363F28D8BC5A00D2D1D6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
 				TargetAttributes = {
-					2C8355B328D89A0800D7C083 = {
-						CreatedOnToolsVersion = 14.0;
+					2C13364A28D8BC5B00D2D1D6 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2C13365028D8BC5B00D2D1D6 = {
+						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 2C8355AF28D89A0800D7C083 /* Build configuration list for PBXProject "Step10" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 2C13364228D8BC5A00D2D1D6 /* Build configuration list for PBXProject "Step10" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 2C8355AB28D89A0800D7C083;
-			productRefGroup = 2C8355B528D89A0800D7C083 /* Products */;
+			mainGroup = 2C13363E28D8BC5A00D2D1D6;
+			productRefGroup = 2C13364C28D8BC5B00D2D1D6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2C8355B328D89A0800D7C083 /* Step10 */,
+				2C13364A28D8BC5B00D2D1D6 /* Step10 (iOS) */,
+				2C13365028D8BC5B00D2D1D6 /* Step10 (macOS) */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2C8355B228D89A0800D7C083 /* Resources */ = {
+		2C13364928D8BC5B00D2D1D6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C8355C028D89A0900D7C083 /* Preview Assets.xcassets in Resources */,
-				2C8355BC28D89A0900D7C083 /* Assets.xcassets in Resources */,
+				2C13365828D8BC5B00D2D1D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C13364F28D8BC5B00D2D1D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C13365928D8BC5B00D2D1D6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C8355B028D89A0800D7C083 /* Sources */ = {
+		2C13364728D8BC5B00D2D1D6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C8355BA28D89A0800D7C083 /* ContentView.swift in Sources */,
-				2C8355B828D89A0800D7C083 /* Step10App.swift in Sources */,
+				2C13365628D8BC5B00D2D1D6 /* ContentView.swift in Sources */,
+				2C13366428D8BD0D00D2D1D6 /* PurchaseManager.swift in Sources */,
+				2C13365428D8BC5B00D2D1D6 /* Step10App.swift in Sources */,
+				2C13366728D8BD1600D2D1D6 /* EntitlementManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C13364D28D8BC5B00D2D1D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C13365728D8BC5B00D2D1D6 /* ContentView.swift in Sources */,
+				2C13366528D8BD0D00D2D1D6 /* PurchaseManager.swift in Sources */,
+				2C13365528D8BC5B00D2D1D6 /* Step10App.swift in Sources */,
+				2C13366828D8BD1600D2D1D6 /* EntitlementManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		2C8355C128D89A0900D7C083 /* Debug */ = {
+		2C13365A28D8BC5B00D2D1D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -207,13 +265,13 @@
 			};
 			name = Debug;
 		};
-		2C8355C228D89A0900D7C083 /* Release */ = {
+		2C13365B28D8BC5B00D2D1D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -258,104 +316,154 @@
 			};
 			name = Release;
 		};
-		2C8355C428D89A0900D7C083 /* Debug */ = {
+		2C13365D28D8BC5B00D2D1D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Step10/Step10.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Step10/Preview Content\"";
 				DEVELOPMENT_TEAM = 8SXR2327BM;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.revenuecat.Step10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				PRODUCT_NAME = Step10;
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2C8355C528D89A0900D7C083 /* Release */ = {
+		2C13365E28D8BC5B00D2D1D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Step10/Step10.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Step10/Preview Content\"";
+				DEVELOPMENT_TEAM = 8SXR2327BM;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.revenuecat.Step10;
+				PRODUCT_NAME = Step10;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C13366028D8BC5B00D2D1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8SXR2327BM;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.5;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.revenuecat.Step10;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				PRODUCT_NAME = Step10;
+				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C13366128D8BC5B00D2D1D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8SXR2327BM;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.revenuecat.Step10;
+				PRODUCT_NAME = Step10;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2C8355AF28D89A0800D7C083 /* Build configuration list for PBXProject "Step10" */ = {
+		2C13364228D8BC5A00D2D1D6 /* Build configuration list for PBXProject "Step10" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C8355C128D89A0900D7C083 /* Debug */,
-				2C8355C228D89A0900D7C083 /* Release */,
+				2C13365A28D8BC5B00D2D1D6 /* Debug */,
+				2C13365B28D8BC5B00D2D1D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2C8355C328D89A0900D7C083 /* Build configuration list for PBXNativeTarget "Step10" */ = {
+		2C13365C28D8BC5B00D2D1D6 /* Build configuration list for PBXNativeTarget "Step10 (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2C8355C428D89A0900D7C083 /* Debug */,
-				2C8355C528D89A0900D7C083 /* Release */,
+				2C13365D28D8BC5B00D2D1D6 /* Debug */,
+				2C13365E28D8BC5B00D2D1D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C13365F28D8BC5B00D2D1D6 /* Build configuration list for PBXNativeTarget "Step10 (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C13366028D8BC5B00D2D1D6 /* Debug */,
+				2C13366128D8BC5B00D2D1D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2C8355AC28D89A0800D7C083 /* Project object */;
+	rootObject = 2C13363F28D8BC5A00D2D1D6 /* Project object */;
 }
