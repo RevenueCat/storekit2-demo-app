@@ -15,15 +15,20 @@ class PurchaseManager: ObservableObject {
 
     @Published
     private(set) var products: [Product] = []
-
     @Published
     private(set) var purchasedProductIDs = Set<String>()
 
-    private var productsLoaded = false
     private let entitlementManager: EntitlementManager
+    private var productsLoaded = false
+    private var updates: Task<Void, Never>? = nil
 
     init(entitlementManager: EntitlementManager) {
         self.entitlementManager = entitlementManager
+        self.updates = observeTransactionUpdates()
+    }
+
+    deinit {
+        self.updates?.cancel()
     }
 
     func loadProducts() async throws {
@@ -70,5 +75,15 @@ class PurchaseManager: ObservableObject {
         }
 
         self.entitlementManager.hasPro = !self.purchasedProductIDs.isEmpty
+    }
+
+    private func observeTransactionUpdates() -> Task<Void, Never> {
+        Task(priority: .background) {
+            for await verificationResult in Transaction.updates {
+                // Using verificationResult directly would be better
+                // but this way works for this tutorial
+                await self.updatePurchasedProducts()
+            }
+        }
     }
 }
