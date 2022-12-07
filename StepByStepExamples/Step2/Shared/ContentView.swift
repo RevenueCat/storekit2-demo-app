@@ -21,7 +21,7 @@ struct ContentView: View {
                 Button {
                     _ = Task<Void, Never> {
                         do {
-                            try await self.purchase(product: product)
+                            try await self.purchase(product)
                         } catch {
                             print(error)
                         }
@@ -48,7 +48,7 @@ struct ContentView: View {
         self.products = try await Product.products(for: productIds)
     }
 
-    private func purchase(product: Product) async throws {
+    private func purchase(_ product: Product) async throws {
         let result: Product.PurchaseResult = try await product.purchase()
 
         switch result {

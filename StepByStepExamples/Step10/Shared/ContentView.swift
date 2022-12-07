@@ -25,7 +25,7 @@ struct ContentView: View {
                     Button {
                         _ = Task<Void, Never> {
                             do {
-                                try await purchaseManager.purchase(product: product)
+                                try await purchaseManager.purchase(product)
                             } catch {
                                 print(error)
                             }

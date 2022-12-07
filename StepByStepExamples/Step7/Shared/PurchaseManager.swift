@@ -37,7 +37,7 @@ class PurchaseManager: ObservableObject {
         self.productsLoaded = true
     }
 
-    func purchase(product: Product) async throws {
+    func purchase(_ product: Product) async throws {
         let result = try await product.purchase()
 
         switch result {

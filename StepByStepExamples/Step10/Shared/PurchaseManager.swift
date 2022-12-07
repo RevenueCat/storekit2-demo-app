@@ -39,7 +39,7 @@ class PurchaseManager: NSObject, ObservableObject {
         self.productsLoaded = true
     }
 
-    func purchase(product: Product) async throws {
+    func purchase(_ product: Product) async throws {
         let result = try await product.purchase()
 
         switch result {
@@ -80,7 +80,7 @@ class PurchaseManager: NSObject, ObservableObject {
     }
 
     private func observeTransactionUpdates() -> Task<Void, Never> {
-        Task(priority: .background) {
+        Task(priority: .background) { [unowned self] in
             for await verificationResult in Transaction.updates {
                 // Using verificationResult directly would be better
                 // but this way works for this tutorial
