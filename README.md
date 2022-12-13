@@ -1,12 +1,12 @@
 # StoreKit 2 Demo app
 
-WIP - This README will look better and link back to the blog post when its up
+![iOS In-app Subscription Tutorial with StoreKit 2 and Swift_iOS In-app Subscription Tutorial with StoreKit 2 and Swift (1)](https://user-images.githubusercontent.com/401294/207304951-99978d23-4f2e-4918-9b9a-1d11c7398fea.png)
 
 ## Implementing On-Device Subscriptions with StoreKit 2 in Swift
 
-These steps pair with the blog post. Not every step has a code change involved.
+These steps pair with the blog post. Not every step has a code change involved which is why it appears some steps are missing.
 
-Each step has its own individual Xcode project and runs using a StoreKit Configuration File so no App Store Connect accounts or configurations are required.
+Each step has its own individual Xcode project and runs using a **StoreKit Configuration File** so **no App Store Connect account** or configuration is required.
 
 1. Listing products
     - https://github.com/RevenueCat/storekit2-demo-app/tree/main/StepByStepExamples/Step1
@@ -25,3 +25,8 @@ Each step has its own individual Xcode project and runs using a StoreKit Configu
 9. Validating receipts
 10. Support in-app purchases from App Store
     - https://github.com/RevenueCat/storekit2-demo-app/tree/main/StepByStepExamples/Step10
+
+## Implementing StoreKit 2 with a server
+
+- https://github.com/RevenueCat/storekit2-demo-app/tree/main/demoserver
+
