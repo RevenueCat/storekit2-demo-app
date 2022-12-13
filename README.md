@@ -30,3 +30,6 @@ Each step has its own individual Xcode project and runs using a **StoreKit Confi
 
 - https://github.com/RevenueCat/storekit2-demo-app/tree/main/demoserver
 
+## Disclaimer
+
+These sample apps were designed to follow the blog post and provide as much succinctness and readability as possible. There will be different (and maybe better) ways to implement these steps for your own app.
