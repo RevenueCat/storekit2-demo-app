@@ -12,6 +12,7 @@ let package = Package(
         .package(url: "https://github.com/vapor/jwt.git", from: "4.0.0"),
         .package(url: "https://github.com/vapor/jwt-kit.git", branch: "jws-spike"),
         .package(url: "https://github.com/vapor/queues-redis-driver.git", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-nio-http2.git", from: "1.38.0"),
     ],
     targets: [
         .target(
